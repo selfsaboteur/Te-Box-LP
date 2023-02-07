@@ -21,3 +21,15 @@ function showDivs(n) {
     }
     x[slideIndex - 1].style.display = "grid";
 }
+
+
+document.getElementById('hb-menu-btn').addEventListener('click', function() {
+    document.getElementById('hb-menu-btn').style.display = 'none';
+    document.getElementById('close-menu-btn').style.display = 'inline';
+    document.querySelector('.nav-list').style.display = 'flex';
+});
+document.getElementById('close-menu-btn').addEventListener('click', function() {
+    document.getElementById('hb-menu-btn').style.display = 'inline';
+    document.getElementById('close-menu-btn').style.display = 'none';
+    document.querySelector('.nav-list').style.display = 'none';
+});
