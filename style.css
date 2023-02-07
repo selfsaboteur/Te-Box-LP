@@ -47,6 +47,19 @@ button {
     margin-left: 14px;
 }
 
+.hb-menu-btn {
+    border: none;
+    background: none;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    display: none;
+}
+
+#close-menu-btn {
+    display: none;
+}
+
 .nav-list {
     display: flex;
     width: 577px;
@@ -1273,19 +1286,25 @@ button {
         position: relative;
         width: calc(100% - 100px);
     }
+    .hb-menu-btn {
+        display: block;
+    }
     .nav-list {
         width: auto;
         flex-direction: column;
         position: absolute;
-        top: 0px;
+        top: 54px;
         right: 0px;
         z-index: 222;
         height: 160px;
         padding: 20px;
         background: #fff;
         border-radius: 2px;
-        box-shadow: ;
         display: none;
+        text-align: end;
+    }
+    .nav-item {
+        font-size: 20px;
     }
     .header-banner {
         align-items: start;
@@ -1327,6 +1346,15 @@ button {
     }
     .footer {
         padding: 26px 50px;
+    }
+}
+
+
+/* Media max-height update */
+
+@media screen and (max-height: 390px) {
+    .banner-text {
+        display: none;
     }
 }
 
